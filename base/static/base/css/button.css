@@ -1,0 +1,227 @@
+.button-container {
+  text-align: center;
+  float:left;
+  margin-left:80px;
+}
+
+.custom-button {
+  background-color: #4caf50; /* Green background */
+  border: none; /* No border */
+  color: white; /* White text */
+  padding: 15px 32px; /* Padding for size */
+  text-align: center; /* Centered text */
+  text-decoration: none; /* No underline */
+  display: inline-block; /* Inline block level */
+  font-size: 16px; /* Set font-size */
+  margin: 4px 2px; /* Margins for spacing */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Drop shadow */
+  transition-duration: 0.4s; /* Smooth transition for hover effect */
+}
+
+.custom-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
+}
+
+.custom-button2 {
+    background-color: #4caf50; /* Green background */
+    border: none; /* No border */
+    color: white; /* White text */
+    padding: 15px 32px; /* Padding for size */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Inline block level */
+    font-size: 16px; /* Set font-size */
+    margin: 4px 2px; /* Margins for spacing */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Drop shadow */
+    transition-duration: 0.4s; /* Smooth transition for hover effect */
+    margin-left:80px;
+}
+
+    .custom-button2:hover {
+        background-color: #45a049; /* Darker green on hover */
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
+    }
+
+/* Styles for file input label to look like a button */
+input[type="file"] {
+  display: none; /* Hide the default file input */
+}
+
+input[type="file"] + label {
+  cursor: pointer; /* Change mouse cursor on hover */
+}
+
+.file-name {
+  font-size: 0.6em; /* Adjust as needed for smaller text */
+  margin-left: 10px; /* Adds some space between the button and text */
+  vertical-align: middle; /* Aligns the text with the button vertically */
+}
+
+.add-document-button,
+.document-table {
+  margin-bottom: 20px; /* Reduce margin as needed */
+  width: 100%; /* Ensure the table uses up the full width of its container */
+  max-width: 100%; /* Prevent the table from exceeding the width of the browser */
+}
+
+
+.document-table table {
+  width: 100%; /* To make the table full-width */
+  border-collapse: collapse; /* If you want to remove space between cells */
+}
+
+.document-table th,
+.document-table td {
+  border: 1px solid #ddd; /* Optional: adds a light border around cells */
+  padding: 8px; /* Adjust padding as needed */
+  text-align: left; /* Aligns text to the left */
+}
+
+/* Add any additional styles needed for your table */
+.actions {
+  padding-bottom: 10px; /* Reduce padding if it's currently larger */
+  margin-bottom: 10px; /* Adjust margin as necessary */
+}
+
+/* If there are other nested elements within .actions that might have padding or margins affecting spacing, consider adjusting them too */
+.actions .menu-bar-container,
+.actions .add-document-button {
+  margin-bottom: 10px; /* Reduce these margins if necessary */
+}
+
+.document-table table {
+  width: 100%; /* Adjust this if needed */
+  max-width: 1400px; /* Sets a maximum width for the table if desired */
+  margin: auto; /* Centers the table horizontally */
+  border-collapse: collapse; /* Ensures cells are tightly packed */
+  table-layout: fixed; /* Forces column widths to match your settings */
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  text-align:left;
+  
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button-container {
+  text-align: right; /* Centers the button horizontally */
+  margin-top: 50px; /* Optional: adds some space at the top */
+  margin-bottom: 20px; /* Optional: adds some space at the bottom */
+  margin-right: 235px; /* Optional: adds some space at the bottom */
+
+}
+
+.emp-search form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-container {
+  display: flex;
+  justify-content: right;
+  align-items: inherit;
+  margin-block: 10px;
+}
+
+.search-container2 {
+    display: flex;
+    justify-content: right;
+    align-items: inherit;
+    margin-block: 10px;
+    margin-right: 80px;
+}
+
+.search-container2 input[type=submit] {
+    background-color: #4caf50; /* Green background */
+    border: none; /* No border */
+    color: white; /* White text */
+    width: 130px;
+    height: 30px;
+    text-align: center; /* Centered text */
+    display: inline-block; /* Inline block level */
+    font-size: 16px; /* Set font-size */
+    margin: 4px 2px; /* Margins for spacing */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Drop shadow */
+}
+
+.search-container2 select {
+    border: none; /* No border */
+    text-align: center; /* Centered text */
+    display: inline-block; /* Inline block level */
+    font-size: 16px; /* Set font-size */
+    margin: 4px 2px; /* Margins for spacing */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Drop shadow */
+    width: 130px;
+    height: 30px;
+}
+
+
+.search-container input[type=submit]{
+  background-color: #4caf50; /* Green background */
+  border: none; /* No border */
+  color: white; /* White text */
+  width:130px;
+  height: 30px;
+  text-align: center; /* Centered text */
+  display: inline-block; /* Inline block level */
+  font-size: 16px; /* Set font-size */
+  margin: 4px 2px; /* Margins for spacing */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Drop shadow */}
+.search-container select{
+  border: none; /* No border */
+  text-align: center; /* Centered text */
+  display: inline-block; /* Inline block level */
+  font-size: 16px; /* Set font-size */
+  margin: 4px 2px; /* Margins for spacing */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Drop shadow */
+  width:130px;
+  height: 30px;
+}

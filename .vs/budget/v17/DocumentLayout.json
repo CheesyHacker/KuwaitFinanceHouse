@@ -1,0 +1,819 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\nurgi\\Documents\\budget\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nurgi\\Documents\\budget\\base\\views.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:base\\views.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nurgi\\Documents\\budget\\base\\urls.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:base\\urls.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nurgi\\Documents\\budget\\budget\\urls.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:budget\\urls.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\sign in.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:base\\templates\\base\\sign in.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\docs2.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:base\\templates\\base\\docs2.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\dashb.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:base\\templates\\base\\dashb.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\upload.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:base\\templates\\base\\upload.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nurgi\\Documents\\budget\\base\\models.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:base\\models.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nurgi\\Documents\\budget\\base\\tests.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:base\\tests.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\sign up.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:base\\templates\\base\\sign up.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\viewActions.html||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:base\\templates\\base\\viewActions.html||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\emp2.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:base\\templates\\base\\emp2.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nurgi\\Documents\\budget\\base\\static\\base\\css\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:base\\static\\base\\css\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nurgi\\Documents\\budget\\base\\static\\base\\css\\recover.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:base\\static\\base\\css\\recover.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nurgi\\Documents\\budget\\base\\static\\base\\css\\popupcss.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:base\\static\\base\\css\\popupcss.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nurgi\\Documents\\budget\\base\\static\\base\\css\\sign-up.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:base\\static\\base\\css\\sign-up.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nurgi\\Documents\\budget\\base\\static\\base\\css\\dashb.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:base\\static\\base\\css\\dashb.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\officerNavBar.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:base\\templates\\base\\officerNavBar.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\navbar.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:base\\templates\\base\\navbar.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\managerNavBar.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:base\\templates\\base\\managerNavBar.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\recover.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:base\\templates\\base\\recover.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nurgi\\Documents\\budget\\base\\forms.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:base\\forms.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\recover2.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:base\\templates\\base\\recover2.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\recoverfin.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:base\\templates\\base\\recoverfin.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nurgi\\Documents\\budget\\base\\static\\base\\css\\newtable.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:base\\static\\base\\css\\newtable.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nurgi\\Documents\\budget\\base\\static\\base\\css\\global.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:base\\static\\base\\css\\global.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\basicNavBar.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:base\\templates\\base\\basicNavBar.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nurgi\\Documents\\budget\\base\\static\\base\\css\\docs.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:base\\static\\base\\css\\docs.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nurgi\\Documents\\budget\\base\\static\\base\\css\\button.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:base\\static\\base\\css\\button.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nurgi\\Documents\\budget\\base\\static\\base\\css\\emp.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:base\\static\\base\\css\\emp.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nurgi\\Documents\\budget\\base\\static\\base\\css\\docs2.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:base\\static\\base\\css\\docs2.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\viewApprovals.html||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:base\\templates\\base\\viewApprovals.html||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nurgi\\Documents\\budget\\budget\\settings.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:budget\\settings.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nurgi\\Documents\\budget\\base\\static\\base\\css\\acs.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:base\\static\\base\\css\\acs.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nurgi\\Downloads\\budget (2)\\budget\\base\\templates\\base\\dashb.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nurgi\\Documents\\budget\\base\\static\\base\\css\\navbar.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:base\\static\\base\\css\\navbar.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nurgi\\Downloads\\full_proj\\full proj\\base\\urls2.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\add_emp.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:base\\templates\\base\\add_emp.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nurgi\\Downloads\\full_proj\\full proj\\base\\views2.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\emp.html||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:base\\templates\\base\\emp.html||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nurgi\\Documents\\budget\\base\\__init__.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:base\\__init__.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nurgi\\Documents\\budget\\base\\apps.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:base\\apps.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nurgi\\Documents\\budget\\base\\admin.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:base\\admin.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nurgi\\Documents\\budget\\budget\\__init__.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:budget\\__init__.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nurgi\\Documents\\budget\\budget\\wsgi.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:budget\\wsgi.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nurgi\\Documents\\budget\\budget\\asgi.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:budget\\asgi.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nurgi\\Documents\\budget\\base\\static\\base\\css\\recover2.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:base\\static\\base\\css\\recover2.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nurgi\\Documents\\budget\\base\\static\\base\\css\\global2.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:base\\static\\base\\css\\global2.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "views.py",
+              "DocumentMoniker": "C:\\Users\\nurgi\\Documents\\budget\\base\\views.py",
+              "RelativeDocumentMoniker": "base\\views.py",
+              "ToolTip": "C:\\Users\\nurgi\\Documents\\budget\\base\\views.py",
+              "RelativeToolTip": "base\\views.py",
+              "ViewState": "AQIAAK0AAAAAAAAAAAAAAL4AAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2024-04-14T06:42:27.611Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "models.py",
+              "DocumentMoniker": "C:\\Users\\nurgi\\Documents\\budget\\base\\models.py",
+              "RelativeDocumentMoniker": "base\\models.py",
+              "ToolTip": "C:\\Users\\nurgi\\Documents\\budget\\base\\models.py",
+              "RelativeToolTip": "base\\models.py",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAADQAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2024-04-14T08:07:04.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "upload.html",
+              "DocumentMoniker": "C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\upload.html",
+              "RelativeDocumentMoniker": "base\\templates\\base\\upload.html",
+              "ToolTip": "C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\upload.html",
+              "RelativeToolTip": "base\\templates\\base\\upload.html",
+              "ViewState": "AQIAAIQAAAAAAAAAAADgv5kAAABdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-24T23:12:31.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "docs2.html",
+              "DocumentMoniker": "C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\docs2.html",
+              "RelativeDocumentMoniker": "base\\templates\\base\\docs2.html",
+              "ToolTip": "C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\docs2.html",
+              "RelativeToolTip": "base\\templates\\base\\docs2.html",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAAAFMAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-24T23:04:16.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "sign up.html",
+              "DocumentMoniker": "C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\sign up.html",
+              "RelativeDocumentMoniker": "base\\templates\\base\\sign up.html",
+              "ToolTip": "C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\sign up.html",
+              "RelativeToolTip": "base\\templates\\base\\sign up.html",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAwwFcAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-14T19:30:12.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "viewActions.html",
+              "DocumentMoniker": "C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\viewActions.html",
+              "RelativeDocumentMoniker": "base\\templates\\base\\viewActions.html",
+              "ToolTip": "C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\viewActions.html",
+              "RelativeToolTip": "base\\templates\\base\\viewActions.html",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-14T20:40:08.764Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "tests.py",
+              "DocumentMoniker": "C:\\Users\\nurgi\\Documents\\budget\\base\\tests.py",
+              "RelativeDocumentMoniker": "base\\tests.py",
+              "ToolTip": "C:\\Users\\nurgi\\Documents\\budget\\base\\tests.py",
+              "RelativeToolTip": "base\\tests.py",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2024-04-17T02:04:37.714Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "urls.py",
+              "DocumentMoniker": "C:\\Users\\nurgi\\Documents\\budget\\budget\\urls.py",
+              "RelativeDocumentMoniker": "budget\\urls.py",
+              "ToolTip": "C:\\Users\\nurgi\\Documents\\budget\\budget\\urls.py",
+              "RelativeToolTip": "budget\\urls.py",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2024-04-14T08:07:11.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "urls.py",
+              "DocumentMoniker": "C:\\Users\\nurgi\\Documents\\budget\\base\\urls.py",
+              "RelativeDocumentMoniker": "base\\urls.py",
+              "ToolTip": "C:\\Users\\nurgi\\Documents\\budget\\base\\urls.py",
+              "RelativeToolTip": "base\\urls.py",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2024-04-14T21:29:34.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "dashb.html",
+              "DocumentMoniker": "C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\dashb.html",
+              "RelativeDocumentMoniker": "base\\templates\\base\\dashb.html",
+              "ToolTip": "C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\dashb.html",
+              "RelativeToolTip": "base\\templates\\base\\dashb.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-15T04:47:48.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "sign in.html",
+              "DocumentMoniker": "C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\sign in.html",
+              "RelativeDocumentMoniker": "base\\templates\\base\\sign in.html",
+              "ToolTip": "C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\sign in.html",
+              "RelativeToolTip": "base\\templates\\base\\sign in.html",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB8AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-14T07:07:56.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "emp2.html",
+              "DocumentMoniker": "C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\emp2.html",
+              "RelativeDocumentMoniker": "base\\templates\\base\\emp2.html",
+              "ToolTip": "C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\emp2.html",
+              "RelativeToolTip": "base\\templates\\base\\emp2.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-25T00:13:52.362Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "index.css",
+              "DocumentMoniker": "C:\\Users\\nurgi\\Documents\\budget\\base\\static\\base\\css\\index.css",
+              "RelativeDocumentMoniker": "base\\static\\base\\css\\index.css",
+              "ToolTip": "C:\\Users\\nurgi\\Documents\\budget\\base\\static\\base\\css\\index.css",
+              "RelativeToolTip": "base\\static\\base\\css\\index.css",
+              "ViewState": "AQIAACkBAAAAAAAAAAAAADoBAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-14T08:12:20.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "recover.css",
+              "DocumentMoniker": "C:\\Users\\nurgi\\Documents\\budget\\base\\static\\base\\css\\recover.css",
+              "RelativeDocumentMoniker": "base\\static\\base\\css\\recover.css",
+              "ToolTip": "C:\\Users\\nurgi\\Documents\\budget\\base\\static\\base\\css\\recover.css",
+              "RelativeToolTip": "base\\static\\base\\css\\recover.css",
+              "ViewState": "AQIAAFcBAAAAAAAAAAAwwGsBAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-14T19:33:38.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "popupcss.css",
+              "DocumentMoniker": "C:\\Users\\nurgi\\Documents\\budget\\base\\static\\base\\css\\popupcss.css",
+              "RelativeDocumentMoniker": "base\\static\\base\\css\\popupcss.css",
+              "ToolTip": "C:\\Users\\nurgi\\Documents\\budget\\base\\static\\base\\css\\popupcss.css",
+              "RelativeToolTip": "base\\static\\base\\css\\popupcss.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-15T03:41:24.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "sign-up.css",
+              "DocumentMoniker": "C:\\Users\\nurgi\\Documents\\budget\\base\\static\\base\\css\\sign-up.css",
+              "RelativeDocumentMoniker": "base\\static\\base\\css\\sign-up.css",
+              "ToolTip": "C:\\Users\\nurgi\\Documents\\budget\\base\\static\\base\\css\\sign-up.css",
+              "RelativeToolTip": "base\\static\\base\\css\\sign-up.css",
+              "ViewState": "AQIAAMMBAAAAAAAAAAAAAP8BAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-15T06:26:49.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "dashb.css",
+              "DocumentMoniker": "C:\\Users\\nurgi\\Documents\\budget\\base\\static\\base\\css\\dashb.css",
+              "RelativeDocumentMoniker": "base\\static\\base\\css\\dashb.css",
+              "ToolTip": "C:\\Users\\nurgi\\Documents\\budget\\base\\static\\base\\css\\dashb.css",
+              "RelativeToolTip": "base\\static\\base\\css\\dashb.css",
+              "ViewState": "AQIAANIBAAAAAAAAAAAAAOABAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-15T04:49:54.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "officerNavBar.html",
+              "DocumentMoniker": "C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\officerNavBar.html",
+              "RelativeDocumentMoniker": "base\\templates\\base\\officerNavBar.html",
+              "ToolTip": "C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\officerNavBar.html",
+              "RelativeToolTip": "base\\templates\\base\\officerNavBar.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-25T09:27:22.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "navbar.html",
+              "DocumentMoniker": "C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\navbar.html",
+              "RelativeDocumentMoniker": "base\\templates\\base\\navbar.html",
+              "ToolTip": "C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\navbar.html",
+              "RelativeToolTip": "base\\templates\\base\\navbar.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-24T23:07:26.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "managerNavBar.html",
+              "DocumentMoniker": "C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\managerNavBar.html",
+              "RelativeDocumentMoniker": "base\\templates\\base\\managerNavBar.html",
+              "ToolTip": "C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\managerNavBar.html",
+              "RelativeToolTip": "base\\templates\\base\\managerNavBar.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-25T09:23:27.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "recover.html",
+              "DocumentMoniker": "C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\recover.html",
+              "RelativeDocumentMoniker": "base\\templates\\base\\recover.html",
+              "ToolTip": "C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\recover.html",
+              "RelativeToolTip": "base\\templates\\base\\recover.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-14T19:30:14.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "forms.py",
+              "DocumentMoniker": "C:\\Users\\nurgi\\Documents\\budget\\base\\forms.py",
+              "RelativeDocumentMoniker": "base\\forms.py",
+              "ToolTip": "C:\\Users\\nurgi\\Documents\\budget\\base\\forms.py",
+              "RelativeToolTip": "base\\forms.py",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2024-04-15T01:45:29.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "recover2.html",
+              "DocumentMoniker": "C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\recover2.html",
+              "RelativeDocumentMoniker": "base\\templates\\base\\recover2.html",
+              "ToolTip": "C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\recover2.html",
+              "RelativeToolTip": "base\\templates\\base\\recover2.html",
+              "ViewState": "AQIAACcAAAAAAAAAAAAwwEYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-14T19:30:10.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "recoverfin.html",
+              "DocumentMoniker": "C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\recoverfin.html",
+              "RelativeDocumentMoniker": "base\\templates\\base\\recoverfin.html",
+              "ToolTip": "C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\recoverfin.html",
+              "RelativeToolTip": "base\\templates\\base\\recoverfin.html",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACAAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-25T09:42:03.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "newtable.css",
+              "DocumentMoniker": "C:\\Users\\nurgi\\Documents\\budget\\base\\static\\base\\css\\newtable.css",
+              "RelativeDocumentMoniker": "base\\static\\base\\css\\newtable.css",
+              "ToolTip": "C:\\Users\\nurgi\\Documents\\budget\\base\\static\\base\\css\\newtable.css",
+              "RelativeToolTip": "base\\static\\base\\css\\newtable.css",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAAAGUAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-15T03:40:59.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "global.css",
+              "DocumentMoniker": "C:\\Users\\nurgi\\Documents\\budget\\base\\static\\base\\css\\global.css",
+              "RelativeDocumentMoniker": "base\\static\\base\\css\\global.css",
+              "ToolTip": "C:\\Users\\nurgi\\Documents\\budget\\base\\static\\base\\css\\global.css",
+              "RelativeToolTip": "base\\static\\base\\css\\global.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-14T19:23:19.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "basicNavBar.html",
+              "DocumentMoniker": "C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\basicNavBar.html",
+              "RelativeDocumentMoniker": "base\\templates\\base\\basicNavBar.html",
+              "ToolTip": "C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\basicNavBar.html",
+              "RelativeToolTip": "base\\templates\\base\\basicNavBar.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-25T04:39:43.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "docs.css",
+              "DocumentMoniker": "C:\\Users\\nurgi\\Documents\\budget\\base\\static\\base\\css\\docs.css",
+              "RelativeDocumentMoniker": "base\\static\\base\\css\\docs.css",
+              "ToolTip": "C:\\Users\\nurgi\\Documents\\budget\\base\\static\\base\\css\\docs.css",
+              "RelativeToolTip": "base\\static\\base\\css\\docs.css",
+              "ViewState": "AQIAAOcAAAAAAAAAAAAAAAsBAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-25T03:31:33.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "button.css",
+              "DocumentMoniker": "C:\\Users\\nurgi\\Documents\\budget\\base\\static\\base\\css\\button.css",
+              "RelativeDocumentMoniker": "base\\static\\base\\css\\button.css",
+              "ToolTip": "C:\\Users\\nurgi\\Documents\\budget\\base\\static\\base\\css\\button.css",
+              "RelativeToolTip": "base\\static\\base\\css\\button.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-24T23:14:16.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "emp.css",
+              "DocumentMoniker": "C:\\Users\\nurgi\\Documents\\budget\\base\\static\\base\\css\\emp.css",
+              "RelativeDocumentMoniker": "base\\static\\base\\css\\emp.css",
+              "ToolTip": "C:\\Users\\nurgi\\Documents\\budget\\base\\static\\base\\css\\emp.css",
+              "RelativeToolTip": "base\\static\\base\\css\\emp.css",
+              "ViewState": "AQIAAMsAAAAAAAAAAAAwwM0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-14T19:28:45.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "docs2.css",
+              "DocumentMoniker": "C:\\Users\\nurgi\\Documents\\budget\\base\\static\\base\\css\\docs2.css",
+              "RelativeDocumentMoniker": "base\\static\\base\\css\\docs2.css",
+              "ToolTip": "C:\\Users\\nurgi\\Documents\\budget\\base\\static\\base\\css\\docs2.css",
+              "RelativeToolTip": "base\\static\\base\\css\\docs2.css",
+              "ViewState": "AQIAAN8AAAAAAAAAAAAAAOwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-24T23:14:09.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "viewApprovals.html",
+              "DocumentMoniker": "C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\viewApprovals.html",
+              "RelativeDocumentMoniker": "base\\templates\\base\\viewApprovals.html",
+              "ToolTip": "C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\viewApprovals.html",
+              "RelativeToolTip": "base\\templates\\base\\viewApprovals.html",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-14T20:40:45.525Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "settings.py",
+              "DocumentMoniker": "C:\\Users\\nurgi\\Documents\\budget\\budget\\settings.py",
+              "RelativeDocumentMoniker": "budget\\settings.py",
+              "ToolTip": "C:\\Users\\nurgi\\Documents\\budget\\budget\\settings.py",
+              "RelativeToolTip": "budget\\settings.py",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAAAHoAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2024-04-14T07:17:53.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "acs.css",
+              "DocumentMoniker": "C:\\Users\\nurgi\\Documents\\budget\\base\\static\\base\\css\\acs.css",
+              "RelativeDocumentMoniker": "base\\static\\base\\css\\acs.css",
+              "ToolTip": "C:\\Users\\nurgi\\Documents\\budget\\base\\static\\base\\css\\acs.css",
+              "RelativeToolTip": "base\\static\\base\\css\\acs.css",
+              "ViewState": "AQIAAMcAAAAAAAAAAAAwwNQAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-15T03:41:07.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "dashb.html",
+              "DocumentMoniker": "C:\\Users\\nurgi\\Downloads\\budget (2)\\budget\\base\\templates\\base\\dashb.html",
+              "RelativeDocumentMoniker": "..\\..\\Downloads\\budget (2)\\budget\\base\\templates\\base\\dashb.html",
+              "ToolTip": "C:\\Users\\nurgi\\Downloads\\budget (2)\\budget\\base\\templates\\base\\dashb.html",
+              "RelativeToolTip": "..\\..\\Downloads\\budget (2)\\budget\\base\\templates\\base\\dashb.html",
+              "ViewState": "AQIAANgAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-25T01:24:13.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "navbar.css",
+              "DocumentMoniker": "C:\\Users\\nurgi\\Documents\\budget\\base\\static\\base\\css\\navbar.css",
+              "RelativeDocumentMoniker": "base\\static\\base\\css\\navbar.css",
+              "ToolTip": "C:\\Users\\nurgi\\Documents\\budget\\base\\static\\base\\css\\navbar.css",
+              "RelativeToolTip": "base\\static\\base\\css\\navbar.css",
+              "ViewState": "AQIAAFwAAAAAAAAAAAAmwHgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-24T23:08:18.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "urls2.py",
+              "DocumentMoniker": "C:\\Users\\nurgi\\Downloads\\full_proj\\full proj\\base\\urls2.py",
+              "RelativeDocumentMoniker": "..\\..\\Downloads\\full_proj\\full proj\\base\\urls2.py",
+              "ToolTip": "C:\\Users\\nurgi\\Downloads\\full_proj\\full proj\\base\\urls2.py",
+              "RelativeToolTip": "..\\..\\Downloads\\full_proj\\full proj\\base\\urls2.py",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2024-04-24T22:37:58.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "views2.py",
+              "DocumentMoniker": "C:\\Users\\nurgi\\Downloads\\full_proj\\full proj\\base\\views2.py",
+              "RelativeDocumentMoniker": "..\\..\\Downloads\\full_proj\\full proj\\base\\views2.py",
+              "ToolTip": "C:\\Users\\nurgi\\Downloads\\full_proj\\full proj\\base\\views2.py",
+              "RelativeToolTip": "..\\..\\Downloads\\full_proj\\full proj\\base\\views2.py",
+              "ViewState": "AQIAACACAAAAAAAAAAAcwDcCAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2024-04-24T22:23:33.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "emp.html",
+              "DocumentMoniker": "C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\emp.html",
+              "RelativeDocumentMoniker": "base\\templates\\base\\emp.html",
+              "ToolTip": "C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\emp.html",
+              "RelativeToolTip": "base\\templates\\base\\emp.html",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-15T00:20:43.092Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "add_emp.html",
+              "DocumentMoniker": "C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\add_emp.html",
+              "RelativeDocumentMoniker": "base\\templates\\base\\add_emp.html",
+              "ToolTip": "C:\\Users\\nurgi\\Documents\\budget\\base\\templates\\base\\add_emp.html",
+              "RelativeToolTip": "base\\templates\\base\\add_emp.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-15T01:46:40.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "apps.py",
+              "DocumentMoniker": "C:\\Users\\nurgi\\Documents\\budget\\base\\apps.py",
+              "RelativeDocumentMoniker": "base\\apps.py",
+              "ToolTip": "C:\\Users\\nurgi\\Documents\\budget\\base\\apps.py",
+              "RelativeToolTip": "base\\apps.py",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2024-04-15T00:01:45.498Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "admin.py",
+              "DocumentMoniker": "C:\\Users\\nurgi\\Documents\\budget\\base\\admin.py",
+              "RelativeDocumentMoniker": "base\\admin.py",
+              "ToolTip": "C:\\Users\\nurgi\\Documents\\budget\\base\\admin.py",
+              "RelativeToolTip": "base\\admin.py",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2024-04-14T21:38:55.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "__init__.py",
+              "DocumentMoniker": "C:\\Users\\nurgi\\Documents\\budget\\base\\__init__.py",
+              "RelativeDocumentMoniker": "base\\__init__.py",
+              "ToolTip": "C:\\Users\\nurgi\\Documents\\budget\\base\\__init__.py",
+              "RelativeToolTip": "base\\__init__.py",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2024-04-17T09:33:37.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "__init__.py",
+              "DocumentMoniker": "C:\\Users\\nurgi\\Documents\\budget\\budget\\__init__.py",
+              "RelativeDocumentMoniker": "budget\\__init__.py",
+              "ToolTip": "C:\\Users\\nurgi\\Documents\\budget\\budget\\__init__.py",
+              "RelativeToolTip": "budget\\__init__.py",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2024-04-17T09:21:44.175Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "wsgi.py",
+              "DocumentMoniker": "C:\\Users\\nurgi\\Documents\\budget\\budget\\wsgi.py",
+              "RelativeDocumentMoniker": "budget\\wsgi.py",
+              "ToolTip": "C:\\Users\\nurgi\\Documents\\budget\\budget\\wsgi.py",
+              "RelativeToolTip": "budget\\wsgi.py",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2024-04-17T08:32:57.874Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "asgi.py",
+              "DocumentMoniker": "C:\\Users\\nurgi\\Documents\\budget\\budget\\asgi.py",
+              "RelativeDocumentMoniker": "budget\\asgi.py",
+              "ToolTip": "C:\\Users\\nurgi\\Documents\\budget\\budget\\asgi.py",
+              "RelativeToolTip": "budget\\asgi.py",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2024-04-17T08:33:56.723Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "recover2.css",
+              "DocumentMoniker": "C:\\Users\\nurgi\\Documents\\budget\\base\\static\\base\\css\\recover2.css",
+              "RelativeDocumentMoniker": "base\\static\\base\\css\\recover2.css",
+              "ToolTip": "C:\\Users\\nurgi\\Documents\\budget\\base\\static\\base\\css\\recover2.css",
+              "RelativeToolTip": "base\\static\\base\\css\\recover2.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-16T06:05:40.066Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "global2.css",
+              "DocumentMoniker": "C:\\Users\\nurgi\\Documents\\budget\\base\\static\\base\\css\\global2.css",
+              "RelativeDocumentMoniker": "base\\static\\base\\css\\global2.css",
+              "ToolTip": "C:\\Users\\nurgi\\Documents\\budget\\base\\static\\base\\css\\global2.css",
+              "RelativeToolTip": "base\\static\\base\\css\\global2.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-14T19:25:21.275Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+﻿.menu-bar3 {
+    align-self: stretch;
+    width: 1440px;
+    position: relative;
+    background-color: var(--color-seagreen);
+    box-shadow: 0px 7px 4px rgba(0, 0, 0, 0.25);
+    display: none;
+    max-width: 100%;
+}
+
+.logo-1-23 {
+    height: 89px;
+    width: 95px;
+    position: relative;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.icround-account-circle-icon3 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    z-index: 1;
+}
+
+.john-doe3 {
+    position: relative;
+    display: inline-block;
+    min-width: 116px;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+.john-doe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-8xs) 0px 0px;
+}
+
+.logo {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-6xs);
+}
+
+.logo-wrapper {
+    height: 63px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0px 0px var(--padding-4xl);
+    box-sizing: border-box;
+}
+
+.menu-bar-container {
+    align-self: stretch;
+    height: 90px;
+    background-color: var(--color-seagreen);
+    box-shadow: 0px 7px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: var(--padding-12xs) var(--padding-72xl) 0px var(--padding-lg);
+    box-sizing: border-box;
+    top: 0;
+    z-index: 99;
+    position: sticky;
+    max-width: 100%;
+    gap: var(--gap-xl);
+    text-align: left;
+    font-size: var(--font-size-6xl);
+    color: var(--white);
+    font-family: var(--font-inter);
+}
+
+.material-symbolsarrow-back-io-icon2 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    min-height: 40px;
+}
+
+.logout3 {
+    height: 40px;
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-width: 67px;
+    max-width: 100%;
+}
+
+
+.logout2 {
+    width: 407px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-5xs);
+    max-width: 100%;
+}
+
+.logout-wrapper {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 100%;
+}
+
+.add-document1 {
+    width: 146.7px;
+    position: relative;
+    font-size: var(--font-size-3xl);
+    display: flex;
+    color: var(--white);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.frame-parent3 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 54px;
+    max-width: 100%;
+}
+
+.add-document-button {
+    width: 1284.8px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px var(--padding-58xl);
+    box-sizing: border-box;
+    max-width: 100%;
+    text-align: left;
+    font-size: var(--font-size-6xl);
+    color: var(--color-seagreen);
+    font-family: var(--font-inter);
+}
+
+.actions {
+    width: 100%;
+    position: relative;
+    background-color: var(--white);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px var(--padding-12xs) 891.6999999999998px 0px;
+    box-sizing: border-box;
+    gap: var(--gap-68xl);
+    letter-spacing: normal;
+}
+
+@media screen and (max-width: 1200px) {
+    .add-document-button {
+        padding-left: var(--padding-19xl);
+        padding-right: var(--padding-19xl);
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .menu-bar-container {
+        padding-right: var(--padding-26xl);
+        box-sizing: border-box;
+    }
+
+    .frame-parent3 {
+        gap: 27px 54px;
+    }
+
+    .actions {
+        gap: 43px 87px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .menu-bar-container {
+        padding-right: var(--padding-xl);
+        box-sizing: border-box;
+    }
+
+    .logout3 {
+        font-size: var(--font-size-xl);
+    }
+
+    .add-document1 {
+        font-size: var(--font-size-lg);
+    }
+
+    .actions {
+        gap: 22px 87px;
+    }
+}
+.links-container {
+    display: flex;
+    justify-content: space-between;
+    width:1300px;
+
+
+}
+
+.btn-primary {
+    /* Add any necessary styling for the button */
+    margin-left: 900px; /* Move the button to the far right */
+
+}
+
+.formclass{
+    float: left;
+}

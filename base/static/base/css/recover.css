@@ -1,0 +1,371 @@
+﻿.frame-child7 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: var(--color-white);
+    width: 100%;
+    height: 100%;
+    display: none;
+    mix-blend-mode: normal;
+}
+
+.aranprime-5pqzua5w-0i-unsplash-icon1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 619px;
+    height: 900px;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.send-2-icon2 {
+    position: absolute;
+    top: 41px;
+    left: 37px;
+    width: 157px;
+    height: 40px;
+    object-fit: cover;
+    z-index: 2;
+}
+
+.rectangle-parent3 {
+    width: 619px;
+    height: 900px;
+    position: relative;
+    background-color: var(--color-white);
+    overflow-x: auto;
+    flex-shrink: 0;
+    max-width: 100%;
+}
+
+.recover-pswd-inner {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 100%;
+}
+
+.reset-password {
+    margin: 0;
+    position: relative;
+    font-size: inherit;
+    line-height: 44px;
+    font-weight: 600;
+    font-family: inherit;
+}
+
+.reset-password-wrapper {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px var(--padding-37xl);
+    flex-shrink: 0;
+}
+
+.primary-button-child {
+    height: 1px;
+    width: 130px;
+    position: relative;
+}
+
+.primary-button-item {
+    height: 0.5px;
+    width: 281px;
+    position: relative;
+    object-fit: contain;
+    margin-left: -16px;
+}
+
+.primary-button {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px var(--padding-8xs) 17.5px 0px;
+    row-gap: 20px;
+    flex-shrink: 0;
+}
+
+.frame-child8 {
+    height: 72px;
+
+    position: relative;
+    border-radius: var(--br-3xs);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-gainsboro);
+    box-sizing: border-box;
+    display: none;
+    width: 100%;
+}
+
+.employee-id2 {
+    width: 86px;
+    border: none;
+    outline: none;
+    font-family: var(--font-poppins);
+    font-size: var(--font-size-sm);
+    background-color: transparent;
+    height: 15px;
+    position: relative;
+    line-height: 14.5px;
+    color: var(--color-dimgray);
+    text-align: left;
+    display: inline-block;
+    padding: 0;
+    z-index: 1;
+}
+
+.rectangle-parent4 {
+    align-self: stretch;
+    height: 72px;
+    border-radius: var(--br-3xs);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-gainsboro);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-6xl) var(--padding-5xl) var(--padding-11xl);
+    max-width: 100%;
+}
+
+
+.rectangle-parent5 {
+    align-self: stretch;
+    height: 72px;
+    border-radius: var(--br-3xs);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-gainsboro);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-6xl) var(--padding-5xl) var(--padding-11xl);
+    max-width: 100%;
+    margin-block:20px;
+}
+
+.frame-parent6 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px var(--padding-8xs) 0px 0px;
+    box-sizing: border-box;
+    gap: var(--gap-13xl);
+    max-width: 100%;
+}
+
+.button-inner {
+    height: 57.8px;
+    width: 400px;
+    position: relative;
+    border-radius: var(--br-3xs);
+    display: none;
+    max-width: 100%;
+}
+
+.reset {
+    position: relative;
+    font-size: var(--font-size-mini-8);
+    line-height: 12px;
+    font-family: var(--font-poppins);
+    color: var(--color-white);
+    text-align: left;
+    display: inline-block;
+    min-width: 41px;
+    z-index: 1;
+}
+
+.button2 {
+    cursor: pointer;
+    border: none;
+    padding: var(--padding-4xl) var(--padding-xl) 22.80000000000001px;
+    background-color: var(--color-seagreen);
+    flex: 1;
+    border-radius: var(--br-3xs);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+    .button2:hover {
+        background-color: var(--color-mediumseagreen);
+    }
+
+.button-wrapper {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 0px 0px var(--padding-8xs);
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.frame-parent5 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 84px;
+    max-width: 100%;
+}
+
+.recover-pswd-child {
+    width: 405px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-181xl) 0px 0px;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.sign-in2 {
+    align-self: stretch;
+    position: relative;
+    line-height: 17px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.sign-in-wrapper {
+    width: 58px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-29xl) 0px 0px;
+    box-sizing: border-box;
+    font-size: var(--font-size-sm);
+    color: var(--color-seagreen);
+}
+
+.recover-pswd {
+    width: 100%;
+    position: relative;
+    background-color: var(--color-whitesmoke);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 116px;
+    letter-spacing: normal;
+    text-align: left;
+    font-size: var(--font-size-17xl);
+    color: var(--color-black);
+    font-family: var(--font-poppins);
+}
+
+@media screen and (max-width: 1325px) {
+    .recover-pswd {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .reset-password {
+        font-size: var(--font-size-10xl);
+        line-height: 35px;
+    }
+
+    .recover-pswd-child {
+        padding-top: var(--padding-111xl);
+        box-sizing: border-box;
+    }
+
+    .recover-pswd {
+        gap: 116px 58px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .reset-password {
+        font-size: var(--font-size-3xl);
+        line-height: 26px;
+    }
+
+    .reset-password-wrapper {
+        padding-left: var(--padding-xl);
+        padding-right: var(--padding-xl);
+        box-sizing: border-box;
+    }
+
+    .primary-button-item {
+        margin-left: 0;
+    }
+
+    .primary-button {
+        flex-wrap: wrap;
+    }
+
+    .frame-parent6 {
+        gap: 16px 32px;
+    }
+
+    .frame-parent5 {
+        gap: 42px 84px;
+    }
+
+    .recover-pswd {
+        gap: 116px 29px;
+    }
+}
+a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent */
+}
+
+.form-group{
+    font-size:26px;
+}
+
+.messages {
+    font-size: 15px;
+}
+
+.errorlist {
+    font-size: 15px;
+    color:darkred;
+}
+
+.button2 {
+    cursor: pointer;
+    border: 0px solid var(--color-seagreen);
+    padding: var(--padding-xl);
+    background-color: var(--color-seagreen);
+    align-self: stretch;
+    border-radius: var(--br-3xs);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    white-space: nowrap;
+    max-width: 100%;
+    margin-block:20px;
+    margin-left:130px;
+}
+
+    .button2:hover {
+        background-color: var(--color-mediumseagreen);
+        border: 1px solid var(--color-mediumseagreen);
+        box-sizing: border-box;
+    }

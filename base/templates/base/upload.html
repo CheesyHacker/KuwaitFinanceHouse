@@ -1,0 +1,198 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+  <link rel="stylesheet" href="{% static 'base/css/popupcss.css' %}" />
+  <link rel="stylesheet" href="{% static 'base/css/newtable.css' %}" />
+  <link rel="stylesheet" href="{% static 'base/css/global2.css' %}" />
+  <link rel="stylesheet" href="{% static 'base/css/acs.css' %}" />
+  <link rel="stylesheet" href="{% static 'base/css/emp.css' %}" />
+  <link rel="stylesheet" href="{% static 'base/css/button.css' %}" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+  <title>Document Upload</title>
+</head>
+<body>
+
+    {% include 'base\navbar.html' %}
+    <br />
+    <br />
+    <h2>Documents</h2>
+    <!-- Filter documents -->
+    <!-- Display errors -->
+    <!-- Button to open the modal -->
+    {% if messages %}
+    <ul class="messages">
+        <br>
+        {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }}" {% endif %}>
+            {{ message }}</li>
+            {% endfor %}
+    </ul>
+    {% endif %}
+    <div class="button-container">
+
+        <button id="myBtn" class="custom-button">Add Document</button>
+        <br>
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <input type="file" id="fileUpload" name="fileUpload" required style="display: none;" />
+                <label for="fileUpload" class="custom-button">Choose File</label>
+                <span id="fileName" class="file-name"></span>
+                <h3>Add New Document</h3>
+
+                <!-- form inputs here -->
+                <label for="docName">Document Name:</label>
+                <input type="text" id="docName" name="docName"><br><br>
+
+                <label for="docDescription">Description:</label>
+                <input type="text" id="docDescription" name="docDescription"><br><br>
+
+
+                <label for="criticality">Criticality:</label>
+                <select id="criticality" name="criticality">
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select><br><br>
+
+                <label for="dep">Department:</label>
+                <select name="department" >
+                    <option value="Accounting">Accounting</option>
+                    <option value="HR">HR</option>
+                    <option value="Finance">Finance</option>
+                    <option value="Media">Media</option>
+                    <option value="Banking">Banking</option>
+                    <option value="Marketing and Sales">Marketing and Sales</option>
+                    <option value="Legal">Legal</option>
+                </select><br /><br />
+
+
+                <button type="submit" class="custom-button">Upload to Google Drive</button>
+
+
+            </form>
+        </div>
+    </div>
+
+
+    <!-- Start of the new table section -->
+
+    <div class="search-container2">
+        <form method="post" action="{% url 'search_doc2' %}">
+            {% csrf_token %}
+            <input type="text" name="doc_name" placeholder="Search">
+        </form>
+        <form method="post" action="{% url 'filter_docs' %}">
+            {% csrf_token %}
+            <select name="criticality" placeholder="Criticality">
+                <option value="4">Criticality</option>
+                <option value="1">High</option>
+                <option value="2">Medium</option>
+                <option value="3">Low</option>
+            </select>
+            <select name="department" placeholder="Department">
+                <option value="All">Department</option>
+                <option value="Accounting">Accounting</option>
+                <option value="HR">HR</option>
+                <option value="Finance">Finance</option>
+                <option value="Media">Media</option>
+                <option value="Banking">Banking</option>
+                <option value="Marketing and Sales">Marketing and Sales</option>
+                <option value="Legal">Legal</option>
+            </select>
+            <input type="submit" value="Search">
+        </form>
+    </div>
+
+    <section class="document-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>DOCUMENT_ID</th>
+                    <th>NAME</th>
+                    <th>VERSION</th>
+                    <th>OWNER_ID</th>
+                    <th>IS_PRIVATE</th>
+                    <th>CRITICALITY</th>
+                    <th>DETAIL</th>
+                    <th>VIEW</th>
+                    <th>DELETE</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                {% for document in documents %}
+                <tr>
+                    <td>{{ document.document_id }}</td>
+                    <td>{{ document.document_name }}</td>
+                    <td>{{ document.version }}</td>
+                    <td>{{ document.owner_id }}</td>
+                    <td>{{ document.is_private }}</td>
+                    <td>{{ document.criticality_id }}</td>
+                    <td>{{ document.detail }}</td>
+
+                    <form method="post" action="{% url 'document_view' %}">
+                        {% csrf_token %}
+                        <input type="hidden" name="doc_id" value="{{ document.document_id }}">
+                    <td><button type="submit" class="btn-custom">View</button></td>
+                    </form>
+
+
+
+
+                    <form method="post" action="{% url 'delete_document' document.document_id %}">
+                        {% csrf_token %}
+                    <td><button type="submit" class="btn-reject">Delete</button></td>
+                    </form>
+                </tr>
+                {% endfor %}
+            </tbody>
+
+        </table>
+    </section>
+
+    <script>
+        document.getElementById("fileUpload").addEventListener("change", function () {
+            var fileName = this.files[0].name;
+            document.getElementById("fileName").textContent = " " + fileName;
+        });
+
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal
+        btn.onclick = function () {
+            modal.style.display = "block";
+        };
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        };
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        };
+    </script>
+</body>
+</html>

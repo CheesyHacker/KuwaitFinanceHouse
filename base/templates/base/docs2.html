@@ -1,0 +1,120 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+  <link rel="stylesheet" href="{% static 'base/css/global2.css' %}" />
+  <link rel="stylesheet" href="{% static 'base/css/acs.css' %}" />
+  <link rel="stylesheet" href="{% static 'base/css/docs2.css' %}" />
+  <link rel="stylesheet" href="{% static 'base/css/popupcss.css' %}">
+  <link rel="stylesheet" href="{% static 'base/css/newtable.css' %}">
+  <link rel="stylesheet" href="{% static 'base/css/button.css' %}">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" />
+</head>
+
+<body>
+    <div class="actions">
+        <header class="menu-bar-container">
+            <div class="menu-bar3"></div>
+            <img class="logo-1-23" loading="lazy" alt="" src="{% static 'base/images/logo (1).png' %}" />
+
+
+
+            <div class="logo-wrapper">
+                <div class="logo">
+                    <img class="icround-account-circle-icon3" loading="lazy" alt="" src="{% static 'base/images/image.png' %}" />
+
+                    <div class="john-doe-container">
+                        <b class="john-doe3">{{ user_name }}</b>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="add-document-button">
+
+                <a href="{% url 'logout' %}" class="single-link dashboard-link"> < logout</a>
+
+        </section>
+
+
+
+        <section class="docs-inner">
+            <div class="frame-parent1">
+                {% if messages %}
+                <ul class="messages">
+                    {% for message in messages %}
+                    <li{% if message.tags %} class="{{ message.tags }}" {% endif %}>
+                        {{ message }}</li>
+                        {% endfor %}
+                </ul>
+                {% endif %}
+
+
+                <div class="search-container">
+
+
+                    <form method="post" action="{% url 'search_doc' %}">
+                        {% csrf_token %}
+                        <input type="text" name="doc_name" placeholder="Search">
+                    </form>
+
+                    <form method="post" action="{% url 'filter_docs2' %}">
+                        {% csrf_token %}
+                        <select name="criticality" placeholder="Criticality">
+                            <option value="4">Criticality</option>
+                            <option value="1">High</option>
+                            <option value="2">Medium</option>
+                            <option value="3">Low</option>
+                        </select>
+                        <select name="department" placeholder="Department">
+                            <option value="All">Department</option>
+                            <option value="Accounting">Accounting</option>
+                            <option value="HR">HR</option>
+                            <option value="Finance">Finance</option>
+                            <option value="Media">Media</option>
+                            <option value="Banking">Banking</option>
+                            <option value="Marketing and Sales">Marketing and Sales</option>
+                            <option value="Legal">Legal</option>
+                        </select>
+                        <input type="submit" value="Search">
+                    </form>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="border-left: 1px solid #000000;">Documents</th>
+                            <th></th>
+                            <th style="border-right: 1px solid #000000;"></th>
+                        </tr>
+                    </thead>
+                    {% for document in documents %}
+                    <tr>
+                        <td>{{ document.document_name }}</td>
+                        <td>
+                            <form method="post" action="{% url 'check_approved' %}">
+                                {% csrf_token %}
+                                <input type="hidden" name="document_id" value="{{ document.document_id }}">
+                                <input type="submit" value="View doc">
+                            </form>
+                        </td>
+                        <td>
+                            <form method="post" action="{% url 'request_access' %}">
+                                {% csrf_token %}
+                                <input type="hidden" name="document_id" value="{{ document.document_id }}">
+                                <input type="submit" value="Request access">
+                            </form>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

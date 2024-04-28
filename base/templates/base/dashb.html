@@ -1,0 +1,197 @@
+﻿{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="{% static 'base/css/dashb.css' %}" />
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" />
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" />
+</head>
+<body>
+
+    <div class="dashboard">
+
+        {% if employee %}
+        {% if employee.designation.designation_name == "Finance Manager" %}
+        {% include 'base\managerNavBar.html' %}
+        {% elif employee.designation.designation_name == "Finance Officer" %}
+        {% include 'base\officerNavBar.html' %}
+        {% elif employee.designation.designation_name == "Head of Finance Department" %}
+        {% include 'base\navbar.html' %}
+        {% endif %}
+        {% endif %}
+
+        <main class="dashboard-inner">
+            <section class="frame-parent">
+                <div class="document-management-system-das-parent">
+                    <h1 class="document-management-system">
+                        Document Management System Dashboard
+                    </h1>
+                    <div class="pending-approvals">
+                        Pending Approvals
+                    </div>
+                    <table class="pending-approval-table">
+                        <tr class="pending-approval-tablerow">
+                            <th class="pending-approval-tableheadings">
+                                Name
+                            </th>
+                            <th class="pending-approval-tableheadings">
+                                Criticality
+                            </th>
+                            <th class="pending-approval-tableheadings">
+                                Emp ID
+                            </th>
+                            <th class="pending-approval-tableheadings">
+                                Date
+                            </th>
+                        </tr>
+                        {% for approval in last_two_approvals %}
+                        <tr class="pending-approval-tablerow-entries">
+                            <td class="pending-approval-tabledata">
+                                {{ approval.document.document_name }}
+                            </td>
+                            <td class="pending-approval-tabledata">
+                                {{ approval.document.criticality.criticality_level }}
+                            </td>
+                            <td class="pending-approval-tabledata">
+                                {{ approval.sender_employee }}
+                            </td>
+                            <td class="pending-approval-tabledata">
+                                {{ approval.date }}
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </table>
+                    <div class="record-summary">
+                        Record Summary
+                    </div>
+
+                    <div class="chart-canvas">
+                        <canvas id="myChart"></canvas>
+                    </div>
+
+                    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+                    <script>
+                    // Fetch the data passed from the Django view
+                    const deletedCount = {{ deleted_count }};
+                    const approvedCount = {{ approved_count }};
+                    const rejectedCount = {{ rejected_count }};
+                    const viewedCount = {{ viewed_count }};
+                    const updatedCount = {{ updated_count }};
+                    const pending = {{ pending }};
+
+                    // Create chart with the fetched data
+                    const ctx = document.getElementById('myChart');
+
+                    new Chart(ctx, {
+                        type: 'doughnut',
+                        data: {
+                            labels: ['Approved', 'Rejected', 'Pending'],
+                            datasets: [{
+                                label: '# of Requests',
+                                data: [approvedCount, rejectedCount, pending],
+                                borderWidth: 1,
+                                backgroundColor: ['#228B22', '#ff0000',  '#FFEA00']
+                            }]
+                        },
+                        options: {
+                            scales: {}
+                        }
+                    });
+                    </script>
+
+                    <div class="recent-records">
+                        Recent Records
+                        {% for document in last_three_documents %}
+                        <div class="recent-record-document">
+                            <img class="recent-record-images" alt="" src="{% static 'base/images/doc.png' %}">
+                            {{ document.document_name }}
+
+                        </div>
+                        <br>
+                        {% endfor %}
+                    </div>
+                    <div class="graph2">
+                        <div class="analysis">
+                            Analysis
+                        </div>
+
+                        <div class="chart-canvas-bar">
+                            <canvas id="myChart2"></canvas>
+                        </div>
+
+                        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+                        <script>
+                        // Fetch the data passed from the Django view
+                        const approved_monthly = {{ approved_count_monthly }};
+                        const approved_yearly = {{ approved_count_yearly }};
+                        const rejected_monthly = {{ rejected_count_monthly }};
+                        const rejected_yearly = {{ rejected_count_yearly }};
+                        const deleted_monthly = {{ deleted_count_monthly }};
+                        const deleted_yearly = {{ deleted_count_yearly }};
+                        const updated_monthly = {{ updated_count_monthly }};
+                        const updated_yearly = {{ updated_count_yearly }};
+
+
+                        const ctx2 = document.getElementById('myChart2');
+                        new Chart(ctx2, {
+                            type: 'bar',
+                            type: 'bar',
+                            data: {
+                                labels: ['Monthly', 'Yearly'],
+                                datasets: [
+                                    {
+                                        label: 'Approved',
+                                        data: [approved_monthly, approved_yearly],
+                                        borderWidth: 1,
+                                        backgroundColor: ['#4169E1'] // Blue
+                                    },
+                                    {
+                                        label: 'Rejected',
+                                        data: [rejected_monthly, rejected_yearly],
+                                        borderWidth: 1,
+                                        backgroundColor: ['#FFA500'] // Orange
+                                    },
+                                    {
+                                        label: 'Deleted',
+                                        data: [deleted_monthly, deleted_yearly],
+                                        borderWidth: 1,
+                                        backgroundColor: ['#800080'] // Purple
+                                    },
+                                    {
+                                        label: 'Updated',
+                                        data: [updated_monthly, updated_yearly],
+                                        borderWidth: 1,
+                                        backgroundColor: ['#A52A2A'] // Brown
+                                    }
+                                ]
+                            },
+                            options: {}
+                        });
+                        </script>
+                        <div class="symbol-library-wrapper">
+                            <div class="symbol-library">
+                                <img class="eparrow-right-bold-icon"
+                                     loading="lazy"
+                                     alt=""
+                                     src="{% static 'base/images/image (6).png' %}" />
+
+                                <a href="{% url 'documents_admin' %}" class="view-documents">
+                                    <h3>View Documents</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,129 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Clean and modern font */
+    background: #f4f4f4; /* Light and neutral background for contrast */
+}
+
+/* Navbar styles */
+.navbar {
+    background: linear-gradient(135deg, #1a472a 0%, #1e4d2b 100%); /* Dark green gradient for depth */
+    color: white;
+    padding: 16px 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* More pronounced shadow for 3D effect */
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-1-23 {
+    height: 50px;
+    width: auto;
+}
+
+/* Navigation menu */
+.navbar-content {
+    display: flex;
+    align-items: center;
+}
+
+.links-container {
+    display: flex;
+    margin-left: auto;
+}
+
+.single-link {
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    padding: 10px 20px;
+    margin: 0 10px;
+    position: relative;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+.single-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #4aa3df;
+    left: 50%;
+    bottom: -5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.single-link:hover, .single-link:focus {
+    color: #4aa3df; /* Lighter shade for hover */
+}
+
+.single-link:hover::after, .single-link:focus::after {
+    width: 100%;
+    left: 0; /* Underline grows from center on hover */
+}
+
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .links-container {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .single-link {
+        width: 100%;
+        margin: 8px 0;
+    }
+
+    .single-link::after {
+        left: 0; /* Adjust underline for mobile to grow from left */
+    }
+}
+
+.single-link2 {
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    padding: 10px 20px;
+    margin: 0 10px;
+    position: relative;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    color:red
+}
+
+    .single-link2::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        background-color: orangered;
+        left: 50%;
+        bottom: -5px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .single-link2:hover, .single-link2:focus {
+        color: orangered; /* Lighter shade for hover */
+    }
+
+        .single-link2:hover::after, .single-link2:focus::after {
+            width: 100%;
+            left: 0; /* Underline grows from center on hover */
+        }

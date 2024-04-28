@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\base",
+    "\\base\\static",
+    "\\base\\static\\base",
+    "\\base\\static\\base\\css",
+    "\\base\\templates",
+    "\\base\\templates\\base",
+    "\\base\\__pycache__",
+    "\\budget",
+    "\\env"
+  ],
+  "SelectedNode": "\\base\\views.py",
+  "PreviewInSolutionExplorer": false
+}

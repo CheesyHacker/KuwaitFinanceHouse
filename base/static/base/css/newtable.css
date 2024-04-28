@@ -1,0 +1,103 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-left: 200px;
+  padding: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+
+}
+
+table th, table td {
+  text-align: left;
+  padding: 15px 20px;
+  border: 1px solid #000000; /* This adds borders between cells */
+}
+
+table thead tr th {
+  background-color: #128754;
+  color: #fff;
+  text-align: left;
+  padding: 15px 20px;
+}
+
+table tbody tr td {
+  text-align: left;
+  padding: 15px 20px;
+  vertical-align: middle;
+}
+
+table tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+table tbody tr:nth-of-type(even) {
+  background-color: #f9f9f9;
+}
+
+table tbody tr:hover {
+  background-color: #e0e0e0; /* Color of the row when hovered */
+}
+
+h2 {
+  margin-left: 200px;
+}
+
+.single-link {
+  /* Shared styles for all links */
+  display: block; /* or inline-block, depending on your layout */
+  margin: 5px 0; /* Adjust spacing as needed */
+  color: #000; /* Default text color */
+  text-decoration: none; /* Removes underline from links */
+  transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.single-link:hover {
+  color: #0f0; /* Color changes on hover */
+  cursor: pointer;
+}
+
+.text-accepted {
+  color: green; /* Or use a specific shade like #00ff00 */
+}
+
+.text-rejected {
+  color: red; /* Or use a specific shade like #ff0000 */
+}
+
+.btn-approve{
+    color:green;
+}
+
+.btn-reject{
+    color:red;
+}
+
+.btn-custom{
+    color:yellowgreen;
+}
+.button-wrapper {
+    width: 100px; /* Adjust the width as needed */
+
+    display: flex;
+    justify-content: center;
+}
+.messages {
+    color: darkred;
+    font-size: 20px;
+    margin-left: 180px;
+
+}
+
+.messages2 {
+    color: darkred;
+    font-size: 20px;
+    margin-left: -80px;
+}

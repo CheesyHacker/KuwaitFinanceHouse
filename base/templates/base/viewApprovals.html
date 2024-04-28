@@ -1,0 +1,198 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+  <link rel="stylesheet" href="{% static 'base/css/popupcss.css' %}">
+  <link rel="stylesheet" href="{% static 'base/css/newtable.css' %}">
+  <link rel="stylesheet" href="{% static 'base/css/global2.css' %}" />
+  <link rel="stylesheet" href="{% static 'base/css/acs.css' %}" />
+  <link rel="stylesheet" href="{% static 'base/css/emp.css' %}" />
+  <link rel="stylesheet" href="{% static 'base/css/button.css' %}" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" />
+</head>
+
+<body>
+  {% include 'base\navbar.html' %}  
+
+<div class="actions">
+  
+
+  
+    <!-- Table -->
+    <div class="container bgColor">
+        <br role="main" class="pb-3">
+          <br></br>
+            <h2>Pending Approvals</h2><br>
+            <div class="row">
+                <div class="col-5">
+                    <table class="table table-striped">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>req id</th>
+                                <th>sender id</th>
+                                <th>Date</th>
+                                <th>Information</th>
+                                <th>Approve</th>
+                                <th>Deny</th>
+                            </tr>
+                        </thead>
+                        {% for approval in approvals %}
+                        <tr>
+                            <td>{{ approval.request_id }}</td>
+                            <td>{{ approval.sender_employee.id }}</td>
+                            <td>{{ approval.date }}</td>
+                            <td><button onclick="openModal('{{ approval.request_id }}')" class="btn-custom">🅘</button></td>
+                            <td><form method="POST" onclick="openAcceptedModal()" class="btn-approve" value="✔" action ="{% url 'approved_document' %}" >
+                              {% csrf_token %}
+                              <input type="hidden" name="emp_id" value="{{ approval.sender_employee.id }}">
+                              <input type="hidden" name="document_id" value="{{ approval.document_id }}">
+                              <input type="hidden" name="request_id" value="{{ approval.request_id }}">
+                              <button type="submit" class="btn-approve" onclick="openAcceptedModal()">✔</button>
+                            </form></td>
+                            <td><form method="POST" onclick="openAcceptedModal()" class="btn-approve" value="✔" action ="{% url 'rejected_document' %}" >
+                              {% csrf_token %}
+                              <input type="hidden" name="emp_id" value="{{ approval.sender_employee.id }}">
+                              <input type="hidden" name="document_id" value="{{ approval.document_id }}">
+                              <input type="hidden" name="request_id" value="{{ approval.request_id }}">
+                              <button type="submit" class="btn-reject">✘</button>
+                            </form></td>
+                        </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+
+<!-- Info Popup --> 
+<div id="modal-form" class="modal"> 
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Document Information</h3>
+        <form>
+            <p>Document: <span id="doc-name"></span></p>
+            <p>Owner: <span id="doc-owner"></span></p> 
+            <p>Request By: <span id="doc-req"></span></p>
+            <p>Date: <span id="doc-date"></span></p>
+            <p>Criticality: <span id="doc-criticality"></span></p>  
+            <input type="button" value="Allow Access" onclick="submitForm()" />  
+        </form>
+    </div>
+</div>
+
+<!-- Accepted Popup Modal -->
+{% if open_modal %}
+
+<div id="accepted-modal" class="modal">
+    <div class="modal-content">
+        <span class="close close-accepted">&times;</span>
+        <h3><span class="text-accepted">Document Accepted</span></h3>
+    </div>
+</div>
+<script>
+  
+  function openAcceptedModal() {
+      var modal = document.getElementById('accepted-modal');
+      if (modal) {
+          modal.style.display = 'block';
+      }
+  }
+  openAcceptedModal();
+</script>
+{% endif %}
+
+<!-- Rejected Popup Modal -->
+<div id="rejected-modal" class="modal">
+    <div class="modal-content">
+        <span class="close close-rejected">&times;</span>
+        <h3><span class="text-rejected">Document Rejected</span></h3>
+    </div>
+</div>
+
+
+  <!-- Script for Popup -->
+ <script>
+   // Get the modal
+   var modal = document.getElementById("modal-form");
+   var acceptedModal = document.getElementById("accepted-modal");
+   var rejectedModal = document.getElementById("rejected-modal");
+   var addDocModal = document.getElementById("add-doc-modal");
+
+    var approvals = [
+        {% for approval in approvals %}
+        {
+            request_id: '{{ approval.request_id }}',
+            sender_employee_id: '{{ approval.sender_employee.id }}',
+            date: '{{ approval.date }}',
+            document_name: '{{ approval.document.document_name }}',
+            owner_username: '{{ approval.document.owner.username }}',
+            sender_username: '{{ approval.sender_employee.username }}',
+            criticality: '{{ approval.document.criticality.criticality_level }}'
+        },
+        {% endfor %}
+    ];
+
+    function openModal(requestId) {
+        var approval = approvals.find(approval => approval.request_id === requestId);
+        document.getElementById('doc-name').innerText = approval.document_name;
+        document.getElementById('doc-owner').innerText = approval.owner_username;
+        document.getElementById('doc-req').innerText = approval.sender_username;
+        document.getElementById('doc-date').innerText = approval.date;
+        document.getElementById('doc-criticality').innerText = approval.criticality;
+        document.getElementById('modal-form').style.display = 'block';
+    }
+
+   function closeModal() {
+     modal.style.display = "none";
+   }
+
+   function openAcceptedModal() {  // Functions to open the Accepted and Rejected modals
+     acceptedModal.style.display = "block";
+   }
+   function openRejectedModal() {
+     rejectedModal.style.display = "block";
+   }
+
+ 
+
+   // Adding event listeners for the close buttons
+   document.querySelectorAll('.close').forEach(item => {
+     item.onclick = function () {
+       closeModal();
+       acceptedModal.style.display = "none";
+       rejectedModal.style.display = "none";
+     }
+   });
+
+   // Closes the currently displayed modal
+   window.onclick = function (event) {
+     if (event.target == modal) {
+       closeModal();
+     } else if (event.target == acceptedModal) {
+       acceptedModal.style.display = "none";
+     } else if (event.target == rejectedModal) {
+       rejectedModal.style.display = "none";
+     } else if (event.target == addDocModal) {
+       addDocModal.style.display = "none";
+     }
+   }
+
+   // Function to handle form submission for the Document Information modal
+   function submitForm() {
+     closeModal();
+   }
+
+   
+
+ </script>
+</body>
+</html>
+

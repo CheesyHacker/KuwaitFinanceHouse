@@ -1,0 +1,163 @@
+﻿{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="{% static 'base/css/newtable.css' %}">
+    <link rel="stylesheet" href="{% static 'base/css/global2.css' %}" />
+    <link rel="stylesheet" href="{% static 'base/css/acs.css' %}" />
+    <link rel="stylesheet" href="{% static 'base/css/emp.css' %}" />
+    <link rel="stylesheet" href="{% static 'base/css/popupcss.css' %}">
+    <link rel="stylesheet" href="{% static 'base/css/button.css' %}" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+ 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" />
+
+    
+</head>
+
+<body>
+    {% include 'base\navbar.html' %}
+    <br />
+    <br />
+    <h2 class="emp-title">List of all Employees</h2><br>
+
+    <!-- Add Employee button -->
+    <!-- Modal for adding employee -->
+
+    <main class="document-table">
+        <section class="pb-3">
+
+
+
+            <div id="addEmployeeModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Add Employee</h3>
+                    <form method="post" id="addEmployeeForm" class="add-employee-form" ">
+                        {% csrf_token %}
+                        <label for="employeeId">Employee ID:</label>
+                        <input type="text" id="employeeId" name="employeeId" required><br><br>
+                        <label for="firstName">First Name:</label>
+                        <input type="text" id="firstName" name="firstName" required><br><br>
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" id="lastName" name="lastName" required><br><br>
+                        <label for="email">Email address:</label>
+                        <input type="email" id="email" name="email" required><br><br>
+                        <label for="designation">Designation:</label>
+                        <select id="designation" name="designation"required>
+                            <option value="1">Finance Officer</option>
+                            <option value="2">Finance Manager</option>
+                            <option value="4">Other Employee</option>
+                        </select>
+                        <input type="submit" value="Add Employee" class="btn btn-primary" />
+                    </form>
+                </div>
+            </div>
+            <!-- Search -->
+
+
+            <div class="emp-search">
+                <form method="post" action="{% url 'search_emp' %}">
+                    {% csrf_token %}
+                    <input type="text" name="emp_search" placeholder="Search">
+                </form>
+                <!-- Display errors -->
+            </div>
+            <button onclick="openAddEmployeeModal()" class="custom-button2">Add Employee</button>
+            <br />
+            <ul class="messages">
+                {% for message in messages %}
+                <li>
+                    {{ message }}
+                </li>
+                {% endfor %}
+            </ul>
+            <div class="row">
+                <div class="col-5">
+                    <table class="emp-table">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Employee ID</th>
+                                <th>Username</th>
+                                <th>First name</th>
+                                <th>Last name</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        {% for user in users %}
+                        <tr>
+                            <td>{{ user.id }}</td>
+                            <td>{{ user.username }}</td>
+                            <td>{{ user.first_name }}</td>
+                            <td>{{ user.last_name }}</td>
+
+                            <form method="post" action="{% url 'remove_emp' user.id %}">
+                                {% csrf_token %}
+                            <td><button type="submit" class="btn-reject">Delete</button></td>
+                            </form>
+                        </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script>
+        var addEmployeeModal = document.getElementById('addEmployeeModal');
+
+        function openAddEmployeeModal() {
+            addEmployeeModal.style.display = "block";
+        }
+
+        function closeModal() {
+            addEmployeeModal.style.display = "none";
+        }
+
+        document.querySelectorAll('.close').forEach(item => {
+            item.onclick = function () {
+                closeModal();
+            }
+        });
+
+        window.onclick = function(event) {
+            if (event.target == addEmployeeModal) {
+                closeModal();
+            }
+        }
+
+        document.getElementById('addEmployeeForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var formData = new FormData(this);
+            formData.append('password', '');
+
+            fetch("{% url 'employees' %}", {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'X-CSRFToken': "{{ csrf_token }}",
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    closeModal();
+                } else {
+                    console.error('Submission failed');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        });
+    </script>
+
+</body>
+
+</html>

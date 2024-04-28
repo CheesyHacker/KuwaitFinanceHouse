@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="{% static 'base/css/global.css' %}" />
+    <link rel="stylesheet" href="{% static 'base/css/recover.css' %}" />
+    <link rel="stylesheet" href="{% static 'base/css/index.css' %}" />
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" />
+</head>
+<body>
+    <div class="recover-pswd">
+        <div class="recover-pswd-inner">
+            <div class="rectangle-parent3">
+                <div class="frame-child7"></div>
+                <img class="aranprime-5pqzua5w-0i-unsplash-icon1"
+                     alt=""
+                     src="{% static 'base/images/Main Center-2.jpg' %}" />
+
+                <img class="send-2-icon2"
+                     loading="lazy"
+                     alt=""
+                     src="{% static 'base/images/logo main.png' %}" />
+            </div>
+        </div>
+        <div class="recover-pswd-child">
+            <div class="frame-parent5">
+                <div class="frame-parent6">
+                    <div class="reset-password-wrapper">
+                        <h1 class="reset-password">Reset Password</h1>
+                    </div>
+                    <form method="post" action="{% url 'reset_password' %}">
+                        {% csrf_token %}
+                        <div class="primary-button">
+                            <img class="primary-button-child"
+                                 loading="lazy"
+                                 alt=""
+                                 src="{% static 'base/images/public/vector-12.svg' %}" />
+
+                            <img class="primary-button-item"
+                                 loading="lazy"
+                                 alt=""
+                                 src="{% static 'base/images/public/vector-131.svg' %}" />
+                        </div>
+                        <div class="rectangle-parent4">
+                            <div class="frame-child8"></div>
+                            <input class="employee-id2"
+                                   name="emp_id"
+                                   placeholder="Employee ID"
+                                   type="text" />
+                        </div>
+                        <ul class="messages">
+                            {% for message in messages %}
+                            <li>
+                                {{ message }}
+                            </li>
+                            {% endfor %}
+                        </ul>
+                        <div class="button-wrapper">
+                            <button class="button2" type="submit">
+                                <img class="button-inner"
+                                     alt=""
+                                     src="{% static 'base/images/public/rectangle-17.svg' %}" />
+
+                                <div class="reset">Reset</div>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="sign-in-wrapper">
+            <a href="{% url 'signin' %}" class="sign-up" id="signUpText">Sign in!</a>
+        </div>
+    </div>
+</body>
+</html>

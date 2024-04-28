@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="{% static 'base/css/newtable.css' %}">
+    <link rel="stylesheet" href="{% static 'base/css/global2.css' %}" />
+    <link rel="stylesheet" href="{% static 'base/css/acs.css' %}" />
+    <link rel="stylesheet" href="{% static 'base/css/emp.css' %}" />
+    <link rel="stylesheet" href="{% static 'base/css/popupcss.css' %}">
+    <link rel="stylesheet" href="{% static 'base/css/button.css' %}" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+   </head>
+
+<body>
+    {% include 'base\navbar.html' %}  
+
+
+ 
+
+        <br>
+        <br>
+        <div class="document-table">
+            <main role="main" class="pb-3">
+                <h2>Audit Log</h2><br>
+                <div class="row">
+                    <div class="col-5">
+                        <table class="table table-striped">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Action ID</th>
+                                    <th>Document ID</th>
+                                    <th>Employee ID</th>
+                                    <th>Action Taken</th>
+                                </tr>
+                            </thead>
+                            {% for record in records %}
+                            <tr>
+                                <td>{{ record.action.action_id }}</td>
+                                <td>{{ record.document.document_id }}</td>
+                                <td>{{ record.employee.id }}</td>
+                                <td>{{ record.action.action_taken }}</td>
+                            </tr>
+                            {% endfor %}
+                        </table>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>

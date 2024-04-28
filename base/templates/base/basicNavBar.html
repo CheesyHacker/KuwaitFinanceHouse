@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'base/css/navbar.css' %}" />
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <img class="logo-1-23" loading="lazy" alt="" src="{% static 'base/images/logo (1).png' %}" />
+            <div class="navbar-content">
+                <div class="links-container">
+                    <a href="{% url 'dashboard' %}" class="single-link">Dashboard</a>
+                    <a href="{% url 'logout' %}" class="single-link">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
